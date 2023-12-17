@@ -8,6 +8,19 @@ app.get("/",(req, res)=>{
         message:"hello world"
     })
 })
+
+app.get("/user",(req, res)=>{
+    res.status(202).json({
+        message:"user successful "
+    })
+})
+
+
+
+
+
+
+
 app.listen(3000,()=> {
     console.log("http://localhost:3000");
 })
